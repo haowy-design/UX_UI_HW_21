@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 21: Portfolio</title>
+    <link rel="stylesheet" href="css/aboutme.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "hva2loo",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <main>
+  <body>
+    <section class="grid-container">
+      <div class="heroImage">
+        <img src="images/Photo of Hao.png" class="photo" alt="Photo of Hao">
+      </div>
+
+      <div class="aboutMe">
+        <div class="nameContainer">
+          <div class="rectangle"></div>
+          <p class="verticleName">HAO PHUNG</p>
+        </div>
+        <p class="description">
+          My specialty is creating designs that draw consumer engagement and
+          builds a story about a project or brand.
+        </p>
+        <p class="description">
+          Wherever there is a gap in the market or a problem to solve, I will
+          construct the simplest and most effective solution possible. My
+          skillset revolves around Graphic & UX/UI Design, with the addition of
+          a marketing background. Subsequently, this makes me a strong
+          all-rounder for brands or businesses that want to grow.
+        </p>
+      </div>
+
+      <div class="socialMedia">
+        <button class="hpbutton">Resume</button>
+        <img
+          src="images/Instagram Vector.png"
+          class="socialMediaIcon"
+          alt="instagram"
+        >
+        <img
+          src="images/LinkedIn Vector.png"
+          class="socialMediaIcon"
+          alt="LinkedIn"
+        >
+      </div>
+    </section>
+  </main>
+    <header>
+      <a href="index.html"><img src="images/Main Logo - Grey.png" class="logo" alt="HP Logo" ></a>
+      <section class="navBar">
+        <a href="aboutme.html" class="navBarLinks">About</a>
+        <a href="project.html" class="navBarLinks">Projects</a>
+        <a href="contactme.html" class="navBarLinks">Contact</a>
+      </section>
+    </header>
+
+    <footer>
+      <section class="socialMediaFooter">
+        <img
+          src="images/Pinterest - Negative.png"
+          class="socialMediaIconFooter"
+        >
+        <img
+          src="images/Instagram - Negative.png"
+          class="socialMediaIconFooter"
+        >
+        <img
+          src="images/LinkedIn - Negative.png"
+          class="socialMediaIconFooter"
+        >
+      </section>
+      <div class="nameEmail">
+        <p>Hao Phung | phungh.design@gmail.com</p>
+      </div>
+    </footer>
+  </body>
+</html>

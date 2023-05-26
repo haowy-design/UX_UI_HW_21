@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 21: Portfolio</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "hva2loo",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Loading Screen-->
+    <section id="loading-screen">
+      <div id="nameLogo">HAO PHUNG</div>
+    </section>
+
+    <!--Main Webpage-->
+    <main>
+      <!--Name & Key Links-->
+      <section class="grid-container">
+        <div class="contentArea">
+          <div class="keyLinks">
+            <div id="graphicText" class="linkName">Graphic</div>
+            <a href="projects-ux-ui.html" id="uxText" class="linkName">UX/UI</a>
+            <a href="aboutme.html" id="designerText" class="linkName"
+              >Designer</a
+            >
+          </div>
+
+          <!--Description & CTA-->
+          <div class="descriptionArea">
+            <p>
+              Melbourne based designer.<br /><br />Building complex
+              experiences<br />through simple design.
+            </p>
+          </div>
+          <a href="/contactme.html" class="buttonArea">
+            <button class="hpbutton">Work with me</button>
+          </a>
+        </div>
+        <div class="nameArea">
+          <p class="nameHome">HAO PHUNG</p>
+        </div>
+      </section>
+    </main>
+
+    <!--Bottom Navigation Bar-->
+    <header>
+      <a href="index.html"
+        ><img src="images/Main Logo - Grey.png" class="logo" alt="HP Logo"
+      /></a>
+      <section class="navBar">
+        <a href="aboutme.html" class="navBarLinks">About</a>
+        <a href="project.html" class="navBarLinks">Projects</a>
+        <a href="contactme.html" class="navBarLinks">Contact</a>
+      </section>
+    </header>
+
+    <!--Footer-->
+    <footer>
+      <section class="socialMediaFooter">
+        <img
+          src="images/Pinterest - Negative.png"
+          class="socialMediaIconFooter"
+        />
+        <img
+          src="images/Instagram - Negative.png"
+          class="socialMediaIconFooter"
+        />
+        <img
+          src="images/LinkedIn - Negative.png"
+          class="socialMediaIconFooter"
+        />
+      </section>
+      <div class="nameEmail">
+        <p>Hao Phung | phungh.design@gmail.com</p>
+      </div>
+    </footer>
+  </body>
+</html>

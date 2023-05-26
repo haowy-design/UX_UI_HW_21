@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 21: Portfolio</title>
+    <link rel="stylesheet" href="css/project.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "hva2loo",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1 class="colourElement">|&nbsp;<br /></h1>
+        <h1>Projects</h1>
+      </div>
+      <div class="projectSelection">
+        <div class="projectCategory Graphic">Graphic Design</div>
+        <a href="projects-ux-ui.html" class="projectCategory UX"
+          >UX/UI Design</a
+        >
+      </div>
+    </main>
+
+    <header>
+      <a href="index.html"
+        ><img src="images/Main Logo - Grey.png" class="logo" alt="HP Logo"
+      /></a>
+      <section class="navBar">
+        <a href="aboutme.html" class="navBarLinks">About</a>
+        <a href="project.html" class="navBarLinks">Projects</a>
+        <a href="contactme.html" class="navBarLinks">Contact</a>
+      </section>
+    </header>
+
+    <footer>
+      <section class="socialMediaFooter">
+        <img
+          src="images/Pinterest - Negative.png"
+          class="socialMediaIconFooter"
+        />
+        <img
+          src="images/Instagram - Negative.png"
+          class="socialMediaIconFooter"
+        />
+        <img
+          src="images/LinkedIn - Negative.png"
+          class="socialMediaIconFooter"
+        />
+      </section>
+      <div class="nameEmail">
+        <p>Hao Phung | phungh.design@gmail.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
